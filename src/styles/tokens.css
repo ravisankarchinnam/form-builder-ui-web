@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Palette */
+  --color-bg: #f0f2f5;
+  --color-surface: #ffffff;
+  --color-surface-alt: #fafbfc;
+  --color-border: #d9dfe7;
+  --color-border-focus: #4f7df9;
+  --color-primary: #4f7df9;
+  --color-primary-hover: #3b66d9;
+  --color-primary-ring: rgba(79, 125, 249, 0.15);
+  --color-primary-ring-subtle: rgba(79, 125, 249, 0.12);
+  --color-danger: #e74c3c;
+  --color-success: #27ae60;
+  --color-success-bg: #eafaf1;
+  --color-error-bg: #fdedec;
+  --color-text: #1a202c;
+  --color-text-muted: #636e7b;
+
+  /* Badge palette */
+  --color-badge-text: #fff;
+  --color-badge-group: #8e44ad;
+  --color-badge-number: #e67e22;
+  --color-badge-text-type: #2980b9;
+
+  /* Neutrals */
+  --color-ghost: #e8ecf1;
+  --color-ghost-hover: #cdd4de;
+  --color-secondary-hover: #d5dbe4;
+
+  /* Radii */
+  --radius: 8px;
+  --radius-sm: 4px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  /* Animation */
+  --transition: 150ms ease;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}

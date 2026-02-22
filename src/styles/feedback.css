@@ -1,0 +1,57 @@
+.success-banner {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.error-banner {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-error-bg);
+  color: var(--color-danger);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.empty-message {
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 12px;
+}
+
+.error-boundary h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-danger);
+}
+
+.error-boundary p {
+  color: var(--color-text-muted);
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.field-editor__warning {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-danger);
+  margin-top: 4px;
+}

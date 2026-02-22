@@ -1,0 +1,44 @@
+.preview-field {
+  margin-bottom: 16px;
+}
+
+.preview-field__label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.preview-field--error .input {
+  border-color: var(--color-danger);
+}
+
+.preview-field__error {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-danger);
+  margin-top: 3px;
+}
+
+.required-star {
+  color: var(--color-danger);
+  font-weight: 700;
+}
+
+.preview-group {
+  border: 1px dashed var(--color-badge-group);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.preview-group__legend {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0 6px;
+  color: var(--color-badge-group);
+}
+
+.preview-actions {
+  margin-top: 8px;
+}

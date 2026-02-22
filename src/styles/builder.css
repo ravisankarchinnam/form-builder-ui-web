@@ -1,0 +1,122 @@
+.field-editor {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background: var(--color-surface);
+  transition: box-shadow var(--transition);
+}
+
+.field-editor:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.field-editor--group {
+  border-left: 3px solid var(--color-badge-group);
+}
+
+.field-editor--text {
+  border-left: 3px solid var(--color-badge-text-type);
+}
+
+.field-editor--number {
+  border-left: 3px solid var(--color-badge-number);
+}
+
+.field-editor__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.field-editor__type-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  color: var(--color-badge-text);
+}
+
+.field-editor__type-badge[data-type='text'] {
+  background: var(--color-badge-text-type);
+}
+
+.field-editor__type-badge[data-type='number'] {
+  background: var(--color-badge-number);
+}
+
+.field-editor__type-badge[data-type='group'] {
+  background: var(--color-badge-group);
+}
+
+.field-editor__actions {
+  display: flex;
+  gap: 4px;
+}
+
+.field-editor__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-editor__label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.field-editor__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.field-editor__checkbox input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.field-editor__number-opts {
+  display: flex;
+  gap: 12px;
+}
+
+.field-editor__number-opts label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* ─── Children area (nested groups) ───────────────────────────────────────── */
+
+.field-editor__children {
+  margin-top: 14px;
+  padding: 12px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+}
+
+.field-editor__children-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}

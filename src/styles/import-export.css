@@ -1,0 +1,27 @@
+.import-export__actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.import-export__textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+  resize: vertical;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.import-export__textarea:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px var(--color-primary-ring-subtle);
+}
