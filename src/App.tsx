@@ -4,6 +4,7 @@ import BuilderPanel from '@/components/Builder';
 import PreviewPanel from '@/components/Preview';
 import ImportExport from '@/components/ImportExport';
 import { APP } from '@/constants';
+import { Analytics } from '@vercel/analytics/react';
 import '@/styles.css';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
 
           <ImportExport />
         </div>
+        <Analytics />
       </FormProvider>
     </ErrorBoundary>
   );
